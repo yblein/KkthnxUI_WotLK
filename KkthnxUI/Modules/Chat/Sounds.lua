@@ -1,5 +1,5 @@
 ﻿local K, C, L, _ = select(2, ...):unpack()
-if C["Chat"].enable ~= true or C["Chat"].Whisp_Sound ~= true then return end
+if C["Chat"].enable ~= true or C["Chat"].whisp_sound ~= true then return end
 
 local sub = string.sub
 local CreateFrame = CreateFrame
