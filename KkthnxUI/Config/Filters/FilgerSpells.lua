@@ -44,6 +44,20 @@ C["filger_spells"] = {
 			{ spellID = 61336, unitID = "player", caster = "player", filter = "BUFF" },
 			-- Hyperspeed Accelerators
 			{ spellID = 54999, unitID = "player", caster = "player", filter = "BUFF" },
+			-- Hand of sacrifice
+			{ spellID = 6940, unitID = "player", caster = "all", filter = "BUFF" },
+			-- Pain Sup
+			{ spellID = 33206, unitID = "player", caster = "all", filter = "BUFF" },
+			-- Earth Shield
+			--{ spellID = 49284, unitID = "player", caster = "all", filter = "BUFF" },
+			-- Fear Ward
+			{ spellID = 6346, unitID = "player", caster = "all", filter = "BUFF" },
+			-- Enrage
+			{ spellID = 5229, unitID = "player", caster = "player", filter = "BUFF" },
+			-- Frenzied Regen
+			{ spellID = 22842, unitID = "player", caster = "player", filter = "BUFF" },
+			-- Berzerk
+			{ spellID = 50334, unitID = "player", caster = "player", filter = "BUFF" },
 		},
 
 		{
@@ -73,10 +87,16 @@ C["filger_spells"] = {
 			{ spellID = 48568, unitID = "target", caster = "player", filter = "DEBUFF" },
 			-- Pounce Bleed
 			{ spellID = 49804, unitID = "target", caster = "player", filter = "DEBUFF" },
+			-- Trauma
+			{ spellID = 46855, unitID = "target", caster = "all", filter = "DEBUFF" },
 			-- Mangle (Cat)
 			{ spellID = 48566, unitID = "target", caster = "all", filter = "DEBUFF" },
 			-- Mangle (Bear)
 			{ spellID = 48564, unitID = "target", caster = "all", filter = "DEBUFF" },
+			-- Demoralizing Roar
+			{ spellID = 48560, unitID = "target", caster = "player", filter = "DEBUFF" },
+			-- Demoralizing Shout
+			{ spellID = 1160, unitID = "target", caster = "all", filter = "DEBUFF" },
 		},
 
 		{
@@ -311,10 +331,14 @@ C["filger_spells"] = {
 
 			-- Explosive Shot
 			{ spellID = 53301, size = 30, filter = "CD" },
+			-- Chimera shot
+			{ spellID = 53209, size = 30, filter = "CD" },
 			-- Aimed Shot
 			{ spellID = 19434, size = 30, filter = "CD" },
 			-- Kill Shot
 			{ spellID = 61006, size = 30, filter = "CD" },
+			-- Arcane shot
+			{ spellID = 49045, size = 30, filter = "CD" },
 			-- Disengage
 			{ spellID = 781, size = 30, filter = "CD" },
 			-- Misdirection
@@ -513,6 +537,8 @@ C["filger_spells"] = {
 			{ spellID = 32182, unitID = "player", caster = "all", filter = "BUFF" },
 			-- Hyperspeed Accelerators
 			{ spellID = 54999, unitID = "player", caster = "player", filter = "BUFF" },
+			-- Shield Block
+			{ spellID = 2565, unitID = "player", caster = "player", filter = "BUFF" },
 		},
 
 		{
@@ -1352,6 +1378,34 @@ C["filger_spells"] = {
 			{ spellID = 32182, unitID = "player", caster = "all", filter = "BUFF" },
 			-- Hyperspeed Accelerators
 			{ spellID = 54999, unitID = "player", caster = "player", filter = "BUFF" },
+			-- Hand of sacrifice
+			{ spellID = 6940, unitID = "player", caster = "all", filter = "BUFF" },
+			-- Pain Sup
+			{ spellID = 33206, unitID = "player", caster = "all", filter = "BUFF" },
+			-- Vampiric Blood
+			{ spellID = 55233, unitID = "player", caster = "player", filter = "BUFF" },
+			-- IBF
+			{ spellID = 66023, unitID = "player", caster = "player", filter = "BUFF" },
+			-- Anti-Magic Shell
+			{ spellID = 48707, unitID = "player", caster = "player", filter = "BUFF" },
+			-- Blade Barrier (not working)
+			{ spellID = 64859, unitID = "player", caster = "player", filter = "BUFF" },
+			{ spellID = 55226, unitID = "player", caster = "player", filter = "BUFF" },
+		},
+
+		{
+			Name = "T_DEBUFF_ICON",
+			Direction = "RIGHT",
+			Mode = "ICON",
+			Interval = 3,
+			Alpha = 1,
+			IconSize = C["Filger"].buffs_size,
+			Position = {"TOP", T_DEBUFF_ICON_Anchor},
+
+			-- Blood Plague
+			{ spellID = 59879, unitID = "target", caster = "player", filter = "DEBUFF" },
+			-- Frost Fever
+			{ spellID = 59921, unitID = "target", caster = "player", filter = "DEBUFF" },
 		},
 
 		{
