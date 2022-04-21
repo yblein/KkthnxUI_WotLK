@@ -119,6 +119,7 @@ SlashCmdList.INSTTELEPORT = function()
 	end
 end
 SLASH_INSTTELEPORT1 = "/teleport"
+SLASH_INSTTELEPORT2 = "/tp"
 
 -- Spec switching(by Monolit)
 SlashCmdList["SPEC"] = function()
